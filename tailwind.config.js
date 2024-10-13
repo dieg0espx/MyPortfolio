@@ -22,10 +22,15 @@ module.exports = {
   					transform: 'translateY(0)',
   					opacity: '1'
   				}
-  			}
+  			}, 
+			moveFade: {
+			'0%': { opacity: '0', transform: 'translateY(100%)' },
+			'100%': { opacity: '1', transform: 'translateY(0)' },
+			},
   		},
   		animation: {
-  			slideDown: 'slideDown 1s ease-out'
+  			slideDown: 'slideDown 1s ease-out', 
+			moveFade: 'moveFade 0.5s linear',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

@@ -48,45 +48,32 @@ const Hero = () => {
             />
           </div>
           <div className="absolute pt-32 mt-28 max-md:px-4 ml-4 md:ml-12">
-            <div className="relative md:top-20 mb-[24px]">
-              <a
-                onMouseEnter={() => handleFloat(true, 0)}
-                onMouseLeave={() => handleFloat(false, 0)}
-                href=""
-                className="border-[1px] border-neutral-600 copilot rounded-full inline-block mb-2"
-              >
-              </a>
-            </div>
-            <p className="mt-20 relative z-1 text-[15px] md:text-[28px]  lg:text-[32px] leading-[30px] md:leading-[36px] lg:leading-[44px] md:10/12  lg:w-9/12 text-[#7d8590]">
-             Hello there 👋, I'm
-            </p>
-            {/* <h1 className="relative z-2 max-md:mb-5 text-[50px] md:text-[72px] max-sm:leading-[60px] max-md:leading-[80px] lg:text-[80px] font-semibold text-white">
-              Diego Espinosa
-            </h1> */} 
 
-            <GradualSpacing
-              className="font-display text-left text-4xl font-bold -tracking-widest text-white dark:text-white md:text-7xl md:leading-[5rem]"
-              text="Diego Espinosa"
-              duration={0.5}
-              delayMultiple={0.2}
-            />
-
-            <p className="relative z-1 text-[15px] md:text-[28px]  lg:text-[20px] leading-[20px] md:leading-[36px] lg:leading-[25px] mb-5 md:mb-12 md:10/12  lg:w-9/12 text-[#7d8590]">
-             I'm a profesional full stack Web and App Developer with extensive experience in both front-end and back-end development.
-            </p>
-            <div className="flex lg:w-11/12 md:space-x-5 max-md:flex-col">
-              <span className="border-t-[1px] md:border-l-[0px] border-neutral-700 mb-3 md:mb-0"></span>
-              <AnimatedAnchor
-                onMouseEnter={() => handleFloat(true, 1)}
-                onMouseLeave={() => handleFloat(false, 1)}
-                className="flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white relative md:-left-5"
-                title="Contact Me"
-                controller={float[1]}
-              />
+            <div className="animate-moveFade">
+              <p className="mt-20 relative z-1 text-[15px] md:text-[28px]  lg:text-[32px] leading-[30px] md:leading-[36px] lg:leading-[44px] md:10/12  lg:w-9/12 text-[#7d8590]">
+               Hello there 👋, I'm
+              </p>
+              <h1 className="relative z-2 max-md:mb-5 text-[50px] md:text-[72px] max-sm:leading-[60px] max-md:leading-[80px] lg:text-[80px] font-semibold text-white">
+                Diego Espinosa
+              </h1> 
+              <p className="relative z-1 text-[15px] md:text-[28px]  lg:text-[20px] leading-[20px] md:leading-[36px] lg:leading-[25px] mb-5 md:mb-12 md:10/12  lg:w-9/12 text-[#7d8590]">
+               I'm a profesional full stack Web and App Developer with extensive experience in both front-end and back-end development.
+              </p>
+              <div className="flex lg:w-11/12 md:space-x-5 max-md:flex-col">
+                <span className="border-t-[1px] md:border-l-[0px] border-neutral-700 mb-3 md:mb-0"></span>
+                <AnimatedAnchor
+                  onMouseEnter={() => handleFloat(true, 1)}
+                  onMouseLeave={() => handleFloat(false, 1)}
+                  className="flex items-center w-full md:w-auto justify-center text-[16px] py-3 px-5 max-md:mt-4 rounded-md border-[#ae88f9] border-[1.5px] text-white relative md:-left-5"
+                  title="Contact Me"
+                  controller={float[1]}
+                />
+              </div>
             </div>
+    
             <div className="md:my-32 my-24">
               <p className="text-[16px] leading-[24px] text-[#7d8590]">
-                Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
+                Reliable Development with Proven Technologies↘︎
               </p>
               <div className="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center gap-y-4 gap-x-0.5">
                 {heroData.collabs.map((logo) => (
