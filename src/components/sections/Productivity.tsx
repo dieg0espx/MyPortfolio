@@ -65,7 +65,7 @@ const Productivity = () => {
         </div>
       </div>
       {/* <IDE /> */}
-      <Image src={ttfDashboard}  className="rounded-[5px] hover:shadow-[1px_1px_285px_-5px_rgba(0,255,167,0.2)] transition-shadow duration-500"/>
+      <Image src={ttfDashboard}  alt="ttf dashboard" className="rounded-[5px] hover:shadow-[1px_1px_285px_-5px_rgba(0,255,167,0.2)] transition-shadow duration-500"/>
       <BranchProd />
       <div className="relative z-[1]">
         <Copilot />
