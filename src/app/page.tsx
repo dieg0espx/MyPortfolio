@@ -16,7 +16,8 @@ export default function Home() {
         <img
           className="absolute top-0 transition ease-in duration-200 max-xl:right-[-1050px] xl:right-[-970px] -z-30 image"
           width="4377"
-          src="/home-campaign/hero-bg.webp"
+          src="/home-campaign/hero-bg8.png"
+          // src="/home-campaign/hero-bg.webp"
           alt="Hero Background"
         />
       </div>

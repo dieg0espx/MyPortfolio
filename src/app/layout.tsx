@@ -6,10 +6,16 @@ import { Navbar, Footer } from "@/components/layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "GitHub Web — by @ladunjexa",
-  description:
-    "A Next.js GitHub homepage template with Tailwind CSS by @ladunjexa",
+  title: 'Your Project Title',
+  description: 'Your Project Description',
+  links: [
+    {
+      rel: "stylesheet",
+      href: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+    },
+  ],
 };
+          
 
 export default function RootLayout({
   children,

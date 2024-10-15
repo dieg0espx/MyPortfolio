@@ -12,6 +12,24 @@ import { heroData } from "@/data";
 import GradualSpacing from "../ui/gradual-spacing";
 
 
+import html  from '../../assets/Images/html.png'
+import css  from '../../assets/Images/css.png'
+import js  from '../../assets/Images/js.png'
+import php  from '../../assets/Images/php.png'
+import mysql  from '../../assets/Images/mysql.png'
+import react  from '../../assets/Images/react.png'
+import node  from '../../assets/Images/node.png'
+import swift  from '../../assets/Images/swift.png'
+import python  from '../../assets/Images/python.png'
+import firebase  from '../../assets/Images/firebase.png'
+import supabase  from '../../assets/Images/supabase.png'
+import wordpress  from '../../assets/Images/wordpress.png'
+import rocket from '../../assets/Images/rocket.png'
+
+
+import Image from "next/image";
+
+
 const Hero = () => {
   const { float, handleFloat } = useFloat([false, false]);
 
@@ -19,9 +37,9 @@ const Hero = () => {
     <section className="hero-section px-3">
       <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
         <Picture
-          className="absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0"
+          className="absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0 z-999"
           size={[500, 326]}
-          src="/home-campaign/hero-drone.webp"
+          src={rocket}
         />
         <div className="flex">
           <div className="relative">
@@ -72,18 +90,23 @@ const Hero = () => {
             </div>
     
             <div className="md:my-32 my-24">
-              <p className="text-[16px] leading-[24px] text-[#7d8590]">
+              <p className="text-[16px] leading-[24px] text-[#7d8590] mb-10">
                 Reliable Development with Proven Technologies↘︎
               </p>
-              <div className="mt-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-center gap-y-4 gap-x-0.5">
-                {heroData.collabs.map((logo) => (
-                  <img
-                    key={uuidv4()}
-                    src={logo.src}
-                    alt={logo.alt}
-                    height={logo.height}
-                  />
-                ))}
+              <div className="mt-4 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 items-center gap-y-4 gap-x-0.5">
+ 
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={html} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={css} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={js} alt={"html"} width={110} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={php} alt={"html"} width={100} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={react} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={node} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={swift} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={mysql} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={python} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={firebase} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={supabase} alt={"html"} width={80} />
+                <Image className="opacity-50 hover:opacity-100 hover:scale-110 transition-transform duration-300" src={wordpress} alt={"html"} width={90} />
               </div>
             </div>
           </div>

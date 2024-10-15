@@ -11,6 +11,8 @@ import {
 import { useFloat } from "@/lib";
 
 import { ProductivityIcon } from "@/assets/icons";
+import Image from "next/image";
+import ttfDashboard from '../../assets/Images/ttf-dashboard.png'
 
 const Productivity = () => {
   const { float, handleFloat } = useFloat([false, false]);
@@ -56,14 +58,14 @@ const Productivity = () => {
             style={{ transitionDelay: "300ms" }}
           >
             <span className="text-[#7ee787]">
-              Accelerate high-quality software development.
+              Significantly improved productivity by transitioning from manual, paperwork-based processes 
             </span>
-            Our AI-powered platform drives innovation with tools that boost
-            developer velocity.
+             {' '}to streamlined software solutions.
           </motion.h3>
         </div>
       </div>
-      <IDE />
+      {/* <IDE /> */}
+      <Image src={ttfDashboard}  className="rounded-[15px] hover:shadow-[1px_1px_285px_-5px_rgba(0,255,167,0.2)] transition-shadow duration-500"/>
       <BranchProd />
       <div className="relative z-[1]">
         <Copilot />

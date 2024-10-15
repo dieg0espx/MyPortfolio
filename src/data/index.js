@@ -8,6 +8,8 @@ import { PythonIcon, JavaScriptIcon, GoIcon } from "@/assets/icons";
 export const GH_USER_URL = "https://github.com/ladunjexa";
 export const GH_REPOSITORY_URL = `${GH_USER_URL}/GitHub-Webpage`;
 
+import react from '../assets/Images/react.png'
+
 const footerData = {
   sections: [
     {
@@ -201,8 +203,8 @@ const navigationData = {
 const heroData = {
   collabs: [
     {
-      src: "/home-campaign/logos/stripe.svg",
-      alt: "Stripe logo",
+      src: react,
+      alt: "React",
       height: "44",
     },
     {
