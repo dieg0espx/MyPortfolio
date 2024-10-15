@@ -42,18 +42,18 @@ const BranchProductivity = () => {
             >
               <h2 className="mb-4 text-2xl max-lg:text-[20px] max-md:w-10/12 lg:w-full w-full text-[#7d8590]">
                 <span className="font-normal text-white">
-                  GitHub Codespaces
+                  A Dashboard
                 </span>{" "}
-                offers a complete dev environment in seconds, so you can code,
-                build, test, and open pull requests from any repo anywhere.
+                that offers total control over your processes and operations, with real-time monitoring and tools designed to enhance workflow efficiency and overall productivity.
               </h2>
 
               <AnimatedAnchor
                 onMouseEnter={() => handleFloat(true)}
                 onMouseLeave={() => handleFloat(false)}
-                title="Check out GitHub Codespaces"
+                title="Check out TTF's Dashboard"
                 controller={float}
                 isUnderline
+                href='https://ttfconstruction.com'
               />
             </motion.div>
           </div>
@@ -89,10 +89,10 @@ const BranchProductivity = () => {
                   initial={{ opacity: 0, x: 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ type: "tween", delay: 0.1 }}
-                  className="overflow-hidden max-w-[373px] bottom-0 rounded-md relative hidden sm:block build-in-animate"
+                  className="overflow-hidden max-w-[373px] bottom-0 rounded-md relative hidden sm:block build-in-animate relative right-10"
                 >
                   <Picture
-                    src="/codespaces/illo-ports.png"
+                    src="/codespaces/ttf-dash-desc.png"
                     size={[746, 368]}
                     className="width-full d-block h-auto"
                   />

@@ -79,9 +79,8 @@ const Productivity = () => {
           >
             <div className="md:flex flex-col flex-1 p-8 sm:p-10 lg:py-16 lg:pl-16 lg:pr-32">
               <p className="text-lg md:text-xl mb-6 font-medium text-[#7d8590]">
-                <span className="text-white font-semibold">GitHub Actions</span>{" "}
-                automates your build, test, and deployment workflow with simple
-                and secure CI/CD.
+                <span className="text-white font-semibold">A Dashboard</span>{" "}
+                to manage and oversee the entire process and operations with real-time control.
               </p>
               <div>
                 <AnimatedAnchor
