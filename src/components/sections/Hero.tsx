@@ -36,10 +36,17 @@ const Hero = () => {
   return (
     <section className="hero-section px-3">
       <div className="relative max-w-[1280px] lg:pt-32 md:px-10 mx-auto pt-16">
-        <Picture
+        {/* <Picture
           className="absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0 z-999"
           size={[500, 326]}
           src={rocket}
+        /> */}
+        <Image
+          className="absolute hero-drone top-28 w-1/4 h-auto right-0 xl:right-0 z-999"
+          width={500}
+          height={326}
+          src={rocket} // Correct src assignment for next/image
+          alt="Rocket Image"
         />
         <div className="flex">
           <div className="relative">
